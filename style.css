@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: rgb(182, 238, 238);
+}
+
+
+.container{
+    display: grid;
+    height: 500px;
+    margin: 0 auto;
+    width:650px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    border-radius: 20px;
+    font-family: 'Karla', sans-serif;
+    margin-top: 150px;
+}
+
+.primero{
+    grid-column:  1/3;
+    grid-row: 1;
+    text-align: left;
+    padding: 40px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+}
+.primero h1{
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 20px;
+}
+.primero h2{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 10px;
+}
+.primero p{
+    color: hsl(218, 22%, 67%);
+    line-height: 25px;
+    font-size: 16px;
+}
+.segundo{
+    grid-column: 1;
+    grid-row: 2;
+    padding: 40px;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0px 0px 0px 10px;
+    color: white;
+}
+.segundo h3{
+    padding-bottom: 20px;
+}
+.segundo p{
+    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+.month{
+    color:hsl(179, 65%, 65%);
+}
+.precio{
+    font-size: 30px;
+    font-weight: 700;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color:hsl(71, 73%, 54%);
+    color: white;
+    border: 1px solid transparent;
+}
+.tercero{
+    grid-template-rows: 2;
+    grid-template-columns: 2;
+    padding: 50px;
+    background-color: hsl(179, 45%, 50%);
+    border-radius: 0px 0px 10px 0px;
+    color:white
+}
+
+.tercero h3{
+    padding-bottom: 20px;
+}
+.tercero p{
+    font-size: 15px;
+    padding-right: 40px;
+    line-height: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+@media (max-width: 500px) {
+    .container {
+      display: block;
+      width: 90%;
+      margin-top: 20px;
+      margin-bottom: 0px;
+}
+.primero h1{
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.primero h2{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.primero p{
+    color: hsl(218, 22%, 67%);
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.segundo{
+    border-radius: 0;
+}
+
+.tercero{
+    border-radius: 0px 0px 20px 20px;
+    padding-right: 80px;
+}
+}
